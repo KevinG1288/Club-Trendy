@@ -166,6 +166,43 @@
 
     .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
     .reveal.show{opacity:1;transform:none}
+
+    /* ===== Ajustes para celular: letra más grande y legible ===== */
+    html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+    @media(max-width:600px){
+      body{font-size:17px;line-height:1.65}
+      .container{width:calc(100% - 32px)}
+      section{padding:60px 0}
+      .nav{height:64px}
+      .logo{font-size:1.45rem}
+      .nav .btn{padding:10px 18px;font-size:.95rem}
+      .hero{padding:40px 0 70px}
+      .hero h1{font-size:2.5rem}
+      .hero p.lead{font-size:1.1rem}
+      .hero-meta{gap:20px}
+      .hero-meta strong{font-size:1.6rem}
+      .hero-meta span{font-size:.95rem}
+      .btn{font-size:1.05rem;padding:16px 28px;width:100%;text-align:center}
+      .nav .btn{width:auto}
+      .eyebrow{font-size:.85rem}
+      .section-title{font-size:2rem}
+      .section-sub{font-size:1.05rem}
+      .cards{grid-template-columns:1fr;gap:18px;margin-top:36px}
+      .card h3{font-size:1.35rem}
+      .card p,.step p,.t-card p,details p{font-size:1.02rem}
+      .cta-box{padding:36px 22px}
+      .cta-box h2{font-size:1.75rem}
+      .cta-box p{font-size:1.02rem}
+      .steps{grid-template-columns:1fr}
+      .step h3{font-size:1.3rem}
+      .form-wrap h3{font-size:1.6rem}
+      .form-wrap li{font-size:1.02rem}
+      .t-grid{grid-template-columns:1fr}
+      summary{font-size:1.05rem}
+      .pf-grid{grid-template-columns:1fr 1fr}
+      .pf-item span{font-size:.95rem}
+      footer{font-size:1rem}
+    }
   </style>
 </head>
 <body>
